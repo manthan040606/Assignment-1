@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ShoppingCart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="add-pro">
+            <h2>Add Product</h2>
+            <label for="">Product Name :</label>
+            <input type="text" id="proname" placeholder="Enter product name">
+            <label for="">Price($) :</label>
+            <input type="number" id="price" placeholder="Enter Price">
+            <label for="">Quantity :</label>
+            <input type="number" id="quantity" placeholder="Enter quantity">
+            <button id="addpro" onclick="f1()">Add product</button>
+        </div>
+
+        <div class="cart">
+            <h2>Cart Summary</h2>
+            <ul id="cartlist">
+
+            </ul>
+            <div class="total">
+                <strong>Total : </strong>
+                <span id="totalPrice">$0</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="ShoppingCart.js"></script>
+</html>

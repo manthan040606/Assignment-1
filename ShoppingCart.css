@@ -1,0 +1,106 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#212121;
+    color: #0e0d0d;
+}
+
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: #168110;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #055811;
+}
+
+.cart-summary {
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.total {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: right;
+    color: #333;
+}
+
+.total strong {
+    font-weight: bold;
+}
+
+.delete-button {
+    color: white;
+    background-color: #e3342f; /* Using a Bootstrap-like color for consistency */
+    border: none;
+    padding: 6px 12px; /* Slightly larger padding for better touch target */
+    border-radius: 4px; /* Same radius as other buttons */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px; /* A bit smaller for distinction */
+    transition: background-color 0.2s ease, transform 0.1s ease; /* Smooth transition for background and transform */
+}
+
+/* Hover effect for the delete button */
+.delete-button:hover {
+    background-color: #c0392b; /* A darker red for hover effect */
+    transform: scale(1.05); /* Slightly grow the button on hover for feedback */
+}
+
+/* Focus effect for accessibility (a11y) */
+.delete-button:focus {
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 0 2px rgba(255, 255, 0, 0.5); /* Yellow outline for visibility when focused */
+}

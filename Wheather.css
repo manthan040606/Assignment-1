@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e9ecef, #ffffff); /* Gradient from light gray to white */
+    color: #343a40;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff; /* Solid background for contrast */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    color: #6c757d;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #495057;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Specific transition for border color */
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #80bdff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background: linear-gradient(135deg, #2f3692, #8f2c2c);/* Button background color */
+    color: white; /* Button text color */
+    border: none; 
+    border-radius: 5px; 
+    padding: 12px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    width: calc(100% - 20px); /* Set consistent width for all buttons */
+}
+
+button:hover {
+   background-color: #0056b3; /* Darker shade on hover */
+   transform: scale(1.02); 
+}
+
+pre {
+   background-color: #f8f9fa; 
+   padding: 15px; 
+   border-radius: 4px; 
+   font-size: 16px; 
+   overflow-x:auto; /* Allow horizontal scrolling if needed */
+}
+
+/* Optional media query for responsive design */
+@media (max-width: 600px) {
+   button {
+       padding: 10px; /* Adjust button padding for smaller screens */
+       font-size: 14px; /* Adjust font size for smaller screens */
+   }
+}

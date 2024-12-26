@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Tracker</title>
+    <link rel="stylesheet" href="Wheather.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast Tracker</h1>
+        
+        <h2>Add City Weather</h2>
+        <form id="weatherForm">
+            <label for="cityName">City Name:</label>
+            <input type="text" id="cityName" required>
+
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" id="temperature" required>
+
+            <label for="condition">Weather Condition:</label>
+            <input type="text" id="condition" required>
+
+            <button type="submit">Add Weather</button>
+        </form>
+
+        <h2>Weather Summary</h2>
+        <button id="showSummary">Show Weather Summary</button>
+
+        <h2>Find Hottest City</h2>
+        <button id="findHottest">Find Hottest City</button>
+
+        <h2>Filter by Condition</h2>
+        <input type="text" id="filterCondition" placeholder="Enter Condition">
+        <button id="filterButton">Filter Cities</button>
+
+        <h2>Results</h2>
+        <pre id="results"></pre>
+    </div>
+
+    <script src="Wheather.js"></script>
+</body>
+</html>
